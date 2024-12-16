@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { ScreenContent } from 'components/ScreenContent';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import { Button } from '../components/Button';
 import { RootStackParamList } from '../navigation';
@@ -13,7 +13,9 @@ export default function Overview() {
 
   return (
     <View style={styles.container}>
-      <ScreenContent path="screens/Lab1.tsx" title="Lab 1 tạo project" />
+      <ScreenContent path="screens/Lab1.tsx" title="Lab 1 tạo project">
+      <Text>Khởi tạo dự án</Text>
+      </ScreenContent>
       <Button onPress={() => navigation.navigate('Lab2', { name: 'YourName' })} title="Show Lab2" />
     </View>
   );
