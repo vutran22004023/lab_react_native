@@ -16,7 +16,8 @@ export default function Overview() {
       <ScreenContent path="screens/Lab1.tsx" title="Lab 1 tạo project">
       <Text>Khởi tạo dự án</Text>
       </ScreenContent>
-      <Button onPress={() => navigation.navigate('Lab2', { name: 'YourName' })} title="Show Lab2" />
+      <Button style={{marginBottom: 10}} onPress={() => navigation.navigate('Lab2', { name: 'YourName' })} title="Show Lab2" />
+      <Button onPress={() => navigation.navigate('Lab3', { name: 'YourName' })} title="Show Lab3" />
     </View>
   );
 }
